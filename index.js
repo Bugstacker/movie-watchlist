@@ -77,7 +77,7 @@ const loading = () => alert.innerHTML = `<p>Loading</p>`
 
 // fetch data from the omdb API using the user input
 async function fetchAPI(input) {
-    let res = await fetch(`http://www.omdbapi.com/?s=${input}&apikey=4b54834`)
+    let res = await fetch(`https://www.omdbapi.com/?s=${input}&apikey=4b54834`)
     let data = await res.json()
     let mainDataArray = data.Search
     return mainDataArray
