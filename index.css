@@ -104,7 +104,6 @@ button:hover,
 button:focus,
 .add-btn:hover,
 .add-btn:focus {
-    /*    transform: scale(1.02);*/
     background-color: #333;
     color: #fff;
 }
@@ -146,7 +145,7 @@ button:focus,
 .movie-div {
     padding: 2em 1.5em;
     width: 97%;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -158,6 +157,7 @@ button:focus,
 }
 
 .seperator {
+    width: 97%;
     border: 1.5px solid #E5E7EB;
 }
 
@@ -201,6 +201,7 @@ button:focus,
     .add-btn {
         grid-column: 4/5;
         align-self: center;
+        font-size: 1.5rem;
     }
 
     .movie-desc {

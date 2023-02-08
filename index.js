@@ -113,8 +113,8 @@ function render(mainDataArray) {
                 ${rmOrAdd(movie)}
             </p>
 			<p class="movie-desc">${movie.Plot}</p>
-			<hr class="seperator">
 		</section>
+        <hr class="seperator">
 	`
     }
 
