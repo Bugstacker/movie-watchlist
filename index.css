@@ -1,0 +1,217 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Typography */
+
+h1 {
+    margin: 0;
+    font-weight: 800;
+    font-size: 2.6875rem;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: .875rem;
+}
+
+/* layout */
+
+header {
+    background: url(images/image\ 36.png);
+    background-color: #0e0e0e;
+    background-size: cover;
+    color: #fff;
+}
+
+.header {
+    padding: 5.125em 2.625em;
+    display: flex;
+    justify-content: space-between
+}
+
+header a,
+.watchlist-add a {
+    text-decoration: none;
+}
+
+a {
+    color: inherit;
+}
+
+.search-bar > input,
+.search-bar > i,
+.search-bar > button {
+    padding: .5625em .8125em;
+}
+
+.search-bar > i,
+.search-bar > input,
+button {
+    border: none;
+}
+
+.search-bar {
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    margin: -1em auto 0px;
+    background-color: #fff;
+    width: 70%;
+    border: 1px solid #D1D5DB;
+}
+
+.search-bar,
+button,
+.add-btn {
+    border-radius: 6px;
+}
+
+.search-bar > input {
+    width: 80%;
+    font-size: inherit;
+}
+
+.search-bar > input:focus {
+    outline: none;
+}
+
+.search-bar,
+.add-btn {
+    border: 1px solid #D1D5DB;
+}
+
+button {
+    font-size: inherit;
+    margin: 0;
+    background: #F9FAFB;
+    border-left: .2px solid #D1D5DB;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover,
+button:focus,
+.add-btn:hover,
+.add-btn:focus {
+    /*    transform: scale(1.02);*/
+    background-color: #333;
+    color: #fff;
+}
+
+.placeholder {
+    min-height: calc(75vh - 3em);
+    display: grid;
+    place-content: center;
+    font-size: 2rem;
+    text-align: center;
+    color: #ccc;
+}
+
+
+.fa-film {
+    font-size: 5rem;
+}
+
+/*movie section*/
+
+.fa-star {
+    color: #fec654;
+}
+
+.title {
+    display: flex;
+    gap: .5em;
+}
+
+.rating {
+    font-weight: normal;
+    width: 20%;
+}
+
+.image {
+    display: block;
+}
+
+.movie-div {
+    padding: 2em 1.5em;
+    width: 97%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.add-btn {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: .5em;
+    cursor: pointer;
+}
+
+.seperator {
+    border: 1.5px solid #E5E7EB;
+}
+
+.movie-desc {
+    margin-top: 1em;
+}
+
+@media (min-width: 760px) {
+    .movie-div {
+        display: grid;
+        grid-template-columns: 40% 10% 20% 20%;
+        margin: 0 auto;
+        column-gap: 2em;
+    }
+
+    .image {
+        grid-column: 1/3;
+        grid-row: 1/4;
+    }
+
+    .title {
+        grid-column: 2/-1;
+        grid-row: 1/2;
+        align-self: end
+    }
+
+    .duration {
+        grid-column: 2/3;
+    }
+
+    .genre {
+        grid-column: 3/4;
+    }
+
+    .duration,
+    .genre {
+        grid-row: 2/3;
+        align-self: center;
+    }
+
+    .add-btn {
+        grid-column: 4/5;
+        align-self: center;
+    }
+
+    .movie-desc {
+        grid-column: 2/-1;
+        grid-row: 3/4;
+        align-self: start;
+    }
+}
+
+/* Watch list specific */
+
+.watchlist-add {
+    color: #0e0e0e;
+}
