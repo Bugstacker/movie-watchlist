@@ -105,7 +105,7 @@ function render(mainDataArray) {
 				<span class="rating">
                 <i class="fa-solid fa-star"></i>
                 ${movie.imdbRating}
-                </span>
+                
 			</h2>
 			<p class="duration">${movie.Runtime}</p>
 			<p class="genre">${movie.Genre}</p>
@@ -138,8 +138,8 @@ function emptyWatchlist() {
             <p> Your watchlist looks empty </p>
             <span class="watchlist-add">
                 <a href="index.html"><i class="fa-solid fa-circle-plus"></i> Lets add some movies</a>
-            </span>
-        </div>
+            
+        
         `
     }
 }
